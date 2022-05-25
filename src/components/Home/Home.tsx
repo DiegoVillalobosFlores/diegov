@@ -11,6 +11,9 @@ export default function Home() {
       </h2>
       <img className={styles.clippy} src={'/clippy.gif'}/>
       <img className={styles.dog} src={'/dog.gif'}/>
+      <div className={styles.carContainer}>
+        <img className={styles.car} src={'/car.gif'}/>
+      </div>
     </div>
   )
 }

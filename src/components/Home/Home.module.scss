@@ -2,16 +2,17 @@
   display: grid;
   text-align: center;
   height: 100vh;
+  overflow-x: hidden;
   justify-items: center;
   grid-template-areas:
-          'dog'
-          'title'
-          'github'
-          'clippy';
+          '. dog .'
+          '. title .'
+          '. github car'
+          '. clippy .';
   @media (min-width: 768px) {
     grid-template-areas:
           'dog . title . .'
-          '. . github . .'
+          '. . github . car'
           '. . . . clippy';
   }
 }
@@ -45,4 +46,20 @@
 
 .github {
   grid-area: github;
+}
+
+@keyframes move {
+  0% {transform: translateX(10vw);}
+  100% {transform: translateX(-100vw)}
+}
+
+.carContainer {
+  grid-area: car;
+  position: relative;
+}
+
+.car {
+  position: absolute;
+  animation: move 5s linear infinite;
+  margin: -100px;
 }
