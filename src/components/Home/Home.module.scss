@@ -6,11 +6,13 @@
   justify-items: center;
   grid-template-areas:
           '. dog .'
-          '. title .'
+          '. congratulations .'
+          '. github .'
           '. github car'
           '. clippy .';
   @media (min-width: 768px) {
     grid-template-areas:
+          'dog . congratulations . .'
           'dog . title . .'
           '. . github . car'
           '. . . . clippy';
@@ -62,4 +64,12 @@
   position: absolute;
   animation: move 5s linear infinite;
   margin: -100px;
+}
+
+.congratulations {
+
+}
+
+.congratulationsContainer {
+  grid-area: congratulations;
 }

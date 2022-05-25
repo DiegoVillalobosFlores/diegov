@@ -3,9 +3,12 @@ import styles from './Home.module.scss'
 export default function Home() {
   return (
     <div className={styles.root}>
-      <h1 className={styles.title}>
-        Welcome to my page!
-      </h1>
+      <div className={styles.congratulationsContainer}>
+        <img className={styles.congratulations} src={'/congratulations.gif'}/>
+        <h1 className={styles.title}>
+          Welcome to my page!
+        </h1>
+      </div>
       <h2 className={`${styles.h2} ${styles.github}`}>
         <a className={styles.link} href={'https://github.com/DiegoVillalobosFlores'}>Github</a>
       </h2>
