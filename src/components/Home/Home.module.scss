@@ -1,0 +1,48 @@
+.root {
+  display: grid;
+  text-align: center;
+  height: 100vh;
+  justify-items: center;
+  grid-template-areas:
+          'dog'
+          'title'
+          'github'
+          'clippy';
+  @media (min-width: 768px) {
+    grid-template-areas:
+          'dog . title . .'
+          '. . github . .'
+          '. . . . clippy';
+  }
+}
+
+.title {
+  color: white;
+  grid-area: title;
+}
+
+.h2 {
+  color: -webkit-link;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
+.dog {
+  grid-area: dog;
+  border-radius: 40%;
+  animation: spin 10s linear infinite;
+}
+
+.clippy {
+  margin-top: auto;
+  grid-area: clippy;
+
+
+}
+
+.github {
+  grid-area: github;
+}
