@@ -7,6 +7,9 @@ export default function Feedback() {
       <div>
         <textarea/>
       </div>
+      <div>
+        <input type={"button"} value={'Submit'}/>
+      </div>
     </div>
   )
 }
